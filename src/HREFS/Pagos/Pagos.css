@@ -40,10 +40,6 @@ a {
     position: relative;
 }
 
-.h2 { /*Agregué este título para volver invisible ese h2 con clase h2 porque sino habia diferencias*/
-    visibility:hidden;
-}
-
 .sidebarMov{
     background-color: red;
     position: absolute;
@@ -52,7 +48,9 @@ a {
 }
 
 .sidebar{
-    display: none;
+    display: flex;
+    position: absolute;
+    top: 0%;/*por alguna razón tuve que poner este atributo, sino el nav quedaba más abajo*/
 }
 
 
