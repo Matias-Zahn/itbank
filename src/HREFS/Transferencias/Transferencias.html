@@ -14,19 +14,48 @@
       <h2>Transferencias</h2>
 
       <!-- ESTE NAV ES PARA CUANDO SE VEA EN RESOLUCIONES menores a 768px -->
-      <nav class="sidebarMov"></nav>
+      <nav class="sidebarMov">Menu</nav>
     </header>
 
-    <!-- ESTE NAV ES PARA CUANDO SE VEA EN RESOLUCIONES mayores a 768px -->
     <nav class="sidebar">
-      <div class="sidebar-items"> <!--LOS HTML DE CADA HREF LOS PUSE EN LA CARPETA DE "HREFS"-->
+      <div class="sidebar-items">
+        <!--LOS HTML DE CADA HREF LOS PUSE EN LA CARPETA DE "HREFS"-->
         <a href="/index.html">Inicio</a>
         <a href="/src/HREFS/Cuentas/Cuentas.html">Cuentas</a>
-        <a href="/src/HREFS/Transferencias/Transferencias.html">Transferencias</a>
+        <a href="/src/HREFS/Transferencias/Transferencias.html"
+          >Transferencias</a
+        >
         <a href="/src/HREFS/Pagos/Pagos.html">Pagos</a>
       </div>
     </nav>
+    <!-- ESTE NAV ES PARA CUANDO SE VEA EN RESOLUCIONES mayores a 768px -->
+
+    <main>
+      <form id="form" class="form-trans">
+        <label class="form-items"
+          ><span>Monto</span>
+          <input name="mount" type="number" placeholder="XXXX $" />
+        </label>
+
+        <label class="form-items"
+          ><span>Alias</span>
+          <input name="alias" type="text" placeholder="Alias.itbank" />
+        </label>
+
+        <label class="form-items">
+          <span>CBU</span>
+          <input
+            name="cbu"
+            type="number"
+            placeholder="XXXXXXXXXXXXXXXXXXXXXX"
+          />
+        </label>
+
+        <button>Enviar</button>
+      </form>
+    </main>
 
     <footer></footer>
+    <script src="/src/scripts/index.js"></script>
   </body>
 </html>

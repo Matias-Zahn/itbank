@@ -1,82 +1,77 @@
 :root {
-    --title: #EFEFEF;
-    --bg-blue: #3454D1;
+  --title: #efefef;
+  --bg-blue: #3454d1;
 }
 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 a {
-    text-decoration: none;
-    color: var(--title);
+  text-decoration: none;
+  color: var(--title);
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    position: relative;
-  }
-
-
-.logo{
-    max-width: 80px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
 
-.head{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    background-color: var(--bg-blue);
-    color: var(--title);
-    position: relative;
+.logo {
+  max-width: 80px;
 }
 
-.sidebarMov{
-    background-color: red;
-    position: absolute;
-    top: 40%;
-    left: 10%;
+.head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--bg-blue);
+  color: var(--title);
+  position: relative;
 }
 
-.sidebar{
-    display: flex;
-    position: absolute;
-    top: 0%;/*por alguna razón tuve que poner este atributo, sino el nav quedaba más abajo*/
+.sidebarMov {
+  background-color: red;
+  position: absolute;
+  top: 40%;
+  left: 10%;
 }
 
+.sidebar {
+  display: flex;
+  position: absolute;
+  top: 0%; /*por alguna razón tuve que poner este atributo, sino el nav quedaba más abajo*/
+}
 
 @media only screen and (min-width: 768px) {
-    .sidebar{
-        display: block;
-        background-color: var(--bg-blue); 
-        width: 15%;
-        min-height: 100%;
-        position: fixed;
+  .sidebar {
+    display: block;
+    background-color: var(--bg-blue);
+    width: 15%;
+    min-height: 100%;
+    position: fixed;
 
-        .sidebar-items{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 5rem;
-            font-size: 20px;
-            text-transform: uppercase;
-            min-height: 100vh;
-
-        }
-        
+    .sidebar-items {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5rem;
+      font-size: 20px;
+      text-transform: uppercase;
+      min-height: 100vh;
     }
+  }
 
-    .sidebarMov{
-        display: none;
-    }
+  .sidebarMov {
+    display: none;
+  }
 }
