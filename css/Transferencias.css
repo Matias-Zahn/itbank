@@ -72,6 +72,7 @@ main {
   position: relative;
 }
 
+
 .sidebarMov {
   background-color: red;
   position: absolute;
@@ -81,6 +82,36 @@ main {
 
 .sidebar {
   display: none;
+}
+
+/*///F O O T E R ///*/
+
+.footer-container{ /*esto va en la query?*/
+  background-color:var(--bg-grey);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  z-index: 20; /*footer quede encima de sidebar*/
+  color: var(--title);
+  gap:20px;
+}
+
+.unorderlist{ /*links del footer*/   
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color:var(--title) ;
+  font-size: 20px;
+}   
+
+.estosdev{ /*subrayado ancla*/
+  text-decoration: underline;   
 }
 
 @media only screen and (min-width: 768px) {
@@ -100,6 +131,7 @@ main {
       font-size: 20px;
       text-transform: uppercase;
       padding: 1rem;
+      z-index: 10; /*barra atrás del footer*/
     }
   }
 

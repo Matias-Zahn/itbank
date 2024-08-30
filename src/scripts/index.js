@@ -13,4 +13,6 @@ document.getElementById("form").addEventListener("submit", (event) => {
   let formJson = JSON.stringify(formDataObj);
 
   localStorage.setItem("formTransfer", formJson);
+
+  document.getElementById(form).reset(); //resetear el formulario
 });
