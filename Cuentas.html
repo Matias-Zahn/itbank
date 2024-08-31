@@ -11,7 +11,7 @@
     <header class="head">
         <img class="logo" src="/logo.webp" alt="logo" />
         <h1>ITBA BANK</h1>
-        <h2>Cuentas</h2>
+        <h2>Conversor de moneda</h2>
   
         <!-- ESTE NAV ES PARA CUANDO SE VEA EN RESOLUCIONES menores a 768px -->
         <nav class="sidebarMov">Menu</nav>
@@ -21,25 +21,37 @@
       <nav class="sidebar">
         <div class="sidebar-items"> <!--LOS HTML DE CADA HREF LOS PUSE EN LA CARPETA DE "HREFS"-->
           <a href="index.html">Inicio</a>
-          <a href="Cuentas.html">Cuentas</a>
+          <a href="Cuentas.html">Conversor</a>
           <a href="Transferencias.html">Transferencias</a>
-          <a href="Pagos.html">Pagos</a>
+          <a href="error.html">Pagos</a>
         </div>
       </nav>
 
-      <main class="main">
-        <section>
-          
-        </section>
-      </main>
+      <div class="containerDiv">
+        <form id="divisa-formulario">
+                <input type="number" id="monto" placeholder="Cantidad">
+                <select id="deMoneda">
+                    <option value="ARS">ARS</option>
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <!--Agregar más monedas, no te olvides-->
+                </select>
+                <span> a </span>
+                <select name="" id="aMoneda">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="ARS">ARS</option>
+                    <!--Agregar más monedas, no te olvides-->
+                </select>
+                <button type="button"onclick="convertir()">Convertir</button>
+        </form>
+        <h2 id="resultado"></h2>
+      </div>
 
       <footer class="footer-container">
         <ul class="unorderlist">
           <li>
-            ITBA BANK fue construido con el duro trabajo de todos
-            <a href="https://github.com/Matias-Zahn" target="_blank" class="estosdev">
-              estos desarrolladores
-            </a>
+            ITBA BANK fue construido con el duro trabajo de nuestros desarrolladores
           </li>
           <li class="Legal">
             <a href="legal.html">Términos y Condiciones </a>
@@ -47,5 +59,6 @@
         </ul>
         <p class="unorderlist">© 2024 ITBA Bank. Todos los derechos reservados.</p>
     </footer>
+    <script src="/src/scripts/convertidor.js"></script>
 </body>
 </html>

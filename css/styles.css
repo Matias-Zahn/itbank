@@ -58,6 +58,76 @@ a {
     display: none;
 }
 
+/*MAIN*/
+
+.formulario{
+    position: absolute;
+    top:10%;
+    left:50%;
+    transform: translate(-50%, 50%);
+    width:420px ;
+    background: var(--bg-grey);
+    border-radius: 10px;  
+    padding: 30px;   
+}
+
+.usuario, .recordar, .registrarse, .contraseña{
+    font-size: 30px;
+    color: var(--title);
+    text-shadow: black 1px 2px 3px;
+}
+
+.inicio{
+    color: var(--color-yellow);
+    text-shadow: black 1px 2px 3px;
+    text-align: center;
+}
+
+.usuario input{
+    font-size: 30px;
+    position:inherit;
+    margin: 0px 0px 0px;    
+}
+
+.usuario label{
+    position: absolute;
+    right: 180px; 
+
+}
+
+
+.contraseña input{
+    font-size: 30px;
+    position:inherit;
+    margin: 10px 0px 0px; 
+}
+.contraseña label{
+    position: absolute;
+    right: 160px;
+    bottom: 145px;
+}
+
+#iniciar{
+    display: block;
+    align-items: center;
+    margin: 20px auto 0;
+    width: 40%;
+    font-size: large;
+}
+
+.recordar{
+    text-align: center;
+}
+
+.registrarse{
+    text-align: center;
+}
+
+
+
+
+
+
 
 /*///F O O T E R ///*/
 
@@ -71,6 +141,7 @@ a {
     z-index: 20; /*footer quede encima de sidebar*/
     color: var(--title);
     gap:20px;
+    text-shadow: black 1px 2px 3px;
 }
 
 .unorderlist{ /*links del footer*/   
@@ -108,6 +179,7 @@ a {
             min-height: 100vh;
             padding: 1rem;
            z-index: 10; /*barra atrás del footer*/
+           text-shadow: black 1px 2px 3px;
            
 
         }

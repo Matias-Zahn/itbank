@@ -54,6 +54,37 @@ a {
    display: none;
 }
 
+/*M A I N*/
+
+
+
+.containerDiv{
+    margin: 250px 10px 10px;
+    text-align: center;
+    
+    
+}
+
+#monto{
+    font-size: 25px;
+    width: 15%;
+}
+
+select{
+    font-size: 25px;
+}
+
+button{
+    font-size: 25px;
+}
+#resultado{
+    color: var(--color-yellow);
+    font-size: 40px;
+    text-shadow: black 4px 2px;
+    border-radius: 5px;
+    
+}
+
 /*///F O O T E R ///*/
 
 .footer-container{ /*esto va en la query?*/

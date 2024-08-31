@@ -23,27 +23,42 @@
       <div class="sidebar-items">
         <!--LOS HTML DE CADA HREF LOS PUSE EN LA CARPETA DE "HREFS"-->
         <a href="index.html">Inicio</a>
-        <a href="Cuentas.html" target="_self">Cuentas</a>
+        <a href="Cuentas.html" target="_self">Conversor</a>
         <a href="Transferencias.html" target="_self"
           >Transferencias</a
         >
-        <a href="Pagos.html" target="_self">Pagos</a>
+        <a href="error.html" target="_self">Pagos</a>
       </div>
     </nav>
 
     <main class="main">
-      <section>
+      <div class="formulario">
+          <h1 class="inicio">Inicio de sesión</h1>
+          <form method=post>
+              <div class="usuario">
+                <label for="usuario">usuario</label>
+                <input type="text" required>
+              </div>
+          
+               <div class="contraseña">
+                <label>contraseña</label>
+                <input type="password" id="contraseña" required>
+              </div>
 
-      </section>
+              <div class="recordar">¿Olvidó su contraseña?</div>
+              <input type="submit" id="iniciar" value="Inciar">
+              <div class="registrarse">
+                    <a href="error.html"> registrarse</a>
+              </div>
+          </form>
+
+      </div>
     </main>
 
     <footer class="footer-container">
         <ul class="unorderlist">
           <li>
-            ITBA BANK fue construido con el duro trabajo de todos
-            <a href="https://github.com/Situado" target="_blank" class="estosdev">
-              estos desarrolladores
-            </a>
+            ITBA BANK fue construido con el duro trabajo de nuestros desarrolladores
           </li>
           <li class="Legal">
             <a href="legal.html">Términos y Condiciones </a>
